@@ -12,12 +12,6 @@ export default function Projets() {
       page: "/portfolio/projets/tamagoshi",
     },
     {
-      title: "Projet Zelda",
-      description: "Projet consistant à tester l'utilisation d'API externe",
-      image: "/projets/zelda/accueil.png",
-      page: "/portfolio/projets/projetzelda",
-    },
-    {
       title: "Minouverse",
       description: "Projet en groupe consistant à créer un twitter-like",
       image: "/projets/minouverse/minouverse.png",
