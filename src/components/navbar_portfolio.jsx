@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function Navbar_portfolio() {
     return (
-        <nav className="justify-items-center m-10">
+        <nav className="justify-items-center m-10 ">
             <ul className="flex items-stretch">
                 <li>
                     <Link to="/portfolio/qui_je_suis" className="flex inline-flex items-center justify-center p-0.5 mx-5 overflow-hidden text-l font-medium rounded-xl group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white text-white focus:ring-4 focus:outline-none focus:ring-cyan-800">

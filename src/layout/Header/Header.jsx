@@ -21,7 +21,7 @@ export default function Header() {
 
   return (
     <header>
-      <nav className="bg-gray-900 fixed w-full z-20 top-0 start-0">
+      <nav className="bg-gray-900 fixed w-full z-20 top-0 start-0  border-b border-gray-500">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
             <a href="/CV.pdf" download className="relative inline-flex items-center justify-center p-0.5 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 hover:text-white text-white focus:ring-4 focus:outline-none focus:ring-green-800" >
