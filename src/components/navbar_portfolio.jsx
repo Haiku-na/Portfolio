@@ -22,6 +22,13 @@ export default function Navbar_portfolio() {
                     </Link>
                 </li>
                 <li>
+                    <Link to="/portfolio/experience_pro" className="flex inline-flex items-center justify-center p-0.5 mx-5 overflow-hidden text-l font-medium rounded-xl group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white text-white focus:ring-4 focus:outline-none focus:ring-cyan-800">
+                        <span className="w-43 relative text-center px-6 py-3 transition-all ease-in duration-75 bg-gray-900 rounded-xl group-hover:bg-transparent">
+                            Expériences Pro
+                        </span>
+                    </Link>
+                </li>
+                <li>
 
                     <Link to="/portfolio/formations" className="flex inline-flex items-center justify-center p-0.5 mx-5 overflow-hidden text-l font-medium rounded-xl group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white text-white focus:ring-4 focus:outline-none focus:ring-cyan-800">
                         <span className="w-43 relative text-center px-6 py-3 transition-all ease-in duration-75 bg-gray-900 rounded-xl group-hover:bg-transparent">
@@ -29,13 +36,7 @@ export default function Navbar_portfolio() {
                         </span>
                     </Link>
                 </li>
-                <li>
-                    <Link to="/portfolio/experience_pro" className="flex inline-flex items-center justify-center p-0.5 mx-5 overflow-hidden text-l font-medium rounded-xl group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white text-white focus:ring-4 focus:outline-none focus:ring-cyan-800">
-                        <span className="w-43 relative text-center px-6 py-3 transition-all ease-in duration-75 bg-gray-900 rounded-xl group-hover:bg-transparent">
-                            Expériences Pro
-                        </span>
-                    </Link>
-                </li>
+
             </ul>
         </nav>
     );
