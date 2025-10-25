@@ -63,11 +63,11 @@ export default function Whoami() {
     <div className="flex flex-col items-center">
       <Navbar_portfolio />
       <div className="mt-6">
-        <img src="/whoiam-p/moi.jpg" alt="moi" className="max-w-50 rounded-full border-6 border-gray-800" />
+        <img src="/whoiam-p/moi.jpg" alt="moi" className="max-w-50 rounded-full border-6 border-gray-900" />
       </div>
       <div className="text-center w-5/6 m-3">
         <h2 className="text-2xl font-bold m-3">Présentation</h2>
-        <p className="bg-gray-800 text-white rounded-xl p-10">
+        <p className="bg-gray-900 text-white rounded-xl p-10">
           En tant qu’étudiante en informatique, j’ai appris à maîtriser différentes structures
           de données essentielles à la programmation. La file (ou queue) est l’une de ces
           structures fondamentales. Elle organise les éléments selon le principe FIFO (First In,
@@ -104,12 +104,12 @@ export default function Whoami() {
           ].map((card, idx) => (
             <div key={idx} className="group [perspective:1000px] w-full h-60">
               <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-                <div className="absolute inset-0 flex items-center justify-center bg-gray-800 rounded-xl shadow-xl backface-hidden">
+                <div className="absolute inset-0 flex items-center justify-center bg-gray-900 rounded-xl shadow-xl backface-hidden">
                   <h2 className="text-lg text-white font-bold">{card.title}</h2>
                 </div>
                 <div className="absolute inset-0 flex flex-col items-center justify-center bg-gray-200  rounded-xl shadow-xl [transform:rotateY(180deg)] backface-hidden">
                   {card.skills.map((skill, i) => (
-                    <h6 key={i} className="text-lg font-bold mb-2 text-gray-800">{skill}</h6>
+                    <h6 key={i} className="text-lg font-bold mb-2 text-gray-900">{skill}</h6>
                   ))}
                 </div>
               </div>
@@ -119,7 +119,7 @@ export default function Whoami() {
       </div>   
       <div className=" text-center w-5/6 m-3">
         <h2 className="text-2xl font-bold m-3">Mes passions</h2>
-        <div className="flex flex-col bg-gray-800 rounded-xl shadow-lg text-white">
+        <div className="flex flex-col bg-gray-900 rounded-xl shadow-lg text-white">
           <div className={`flex flex-col md:flex-row items-center duration-300 duration-300 ${fade ? "opacity-100" : "opacity-0"}`}>
             <div className="md:w-1/2 p-6 flex flex-col justify-center">
               <h2 className="text-xl font-bold mb-3">{slides[currentIndex].title}</h2>

@@ -8,7 +8,7 @@ export default function Projets() {
       title: "Tamagoshi",
       description:
         "Réalisation d'un tamagoshi de A à Z, modélisation du boitier, connexions, programmation",
-      image: "/whoiam-p/golf.jpg",
+      image: "/projets/tamagoshi/monstre.jpg",
       page: "/portfolio/projets/tamagoshi",
     },
     {
@@ -40,11 +40,11 @@ export default function Projets() {
   ];
 
   return (
-    <div className="flex flex-col items-center min-h-screen bg-gray-950 text-white">
+    <div className="flex flex-col items-center min-h-screen text-white">
       <Navbar_portfolio />
       <div className="w-5/6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
         {projets.map((card, idx) => (
-          <div key={idx} className="flex flex-col justify-between h-[430px] bg-gray-800 border border-gray-700 rounded-lg shadow-md hover:shadow-lg transition-all duration-200" >
+          <div key={idx} className="flex flex-col justify-between h-[430px] bg-gray-900 border border-gray-700 rounded-lg shadow-md hover:shadow-lg transition-all duration-200" >
               <img className="rounded-t-lg w-full h-48 object-cover" src={card.image} alt={card.title} />
             <div className="p-5 flex flex-col flex-grow">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">

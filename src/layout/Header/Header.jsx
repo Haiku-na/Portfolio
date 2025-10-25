@@ -21,11 +21,11 @@ export default function Header() {
 
   return (
     <header>
-      <nav className="bg-gray-800 fixed w-full z-20 top-0 start-0">
+      <nav className="bg-gray-900 fixed w-full z-20 top-0 start-0">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-            <a href="/CV.pdf" download className="relative inline-flex items-center justify-center p-0.5 me-2 overflow-hidden text-sm font-medium text-gray-800 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 hover:text-white text-white focus:ring-4 focus:outline-none focus:ring-green-800" >
-              <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-gray-800 rounded-md group-hover:bg-transparent">
+            <a href="/CV.pdf" download className="relative inline-flex items-center justify-center p-0.5 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 hover:text-white text-white focus:ring-4 focus:outline-none focus:ring-green-800" >
+              <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-gray-900 rounded-md group-hover:bg-transparent">
                 Télécharger le CV
               </span>
             </a>
@@ -39,7 +39,7 @@ export default function Header() {
           </div>
 
           <div className={`${isMenuOpen ? "" : "hidden"} items-center justify-between w-full md:flex md:w-auto md:order-1`} id="navbar-sticky" >
-            <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 bg-gray-800 md:bg-gray-800 border-gray-700">
+            <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 bg-gray-900 md:bg-gray-900 border-gray-700">
               <li>
                 <Link to="/" className="block py-2 px-3 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 text-white" onClick={() => setIsMenuOpen(false)} >
                   Accueil

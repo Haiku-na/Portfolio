@@ -10,7 +10,7 @@ import React from "react";
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
-      <div className="flex flex-col min-h-screen bg-gray-950 text-white">
+      <div className="flex flex-col min-h-screen bg-gray-700 text-white">
         <Header />
         <main className="flex-grow">
           <App />
