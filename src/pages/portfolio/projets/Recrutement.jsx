@@ -12,9 +12,8 @@ export default function Recrutement() {
           <h2 className="text-3xl font-bold border-b-2 border-white pb-2">Tamamonstra – Tamagotchi Arduino</h2>
 
           <p className=" leading-relaxed">
-            Projet réalisé dans le cadre du Bachelor Informatique à l'école Hexagone.
-            Tamamonstra est un Tamagotchi interactif où l’utilisateur prend soin d’un petit monstre virtuel.
-            Le monstre doit manger, dormir, jouer, se laver et être soigné, et peut partir à l’aventure pour gagner de l’argent et des ressources.
+            Projet réalisé en équipe de trois dans le cadre du Pré-Master of Science à Epitech. <br />
+            Il s’agit d’un site de recrutement sur le thème du fantastique médiéval. L’objectif du projet était de concevoir un site web complet intégrant un frontend, un backend et une API REST. <br />
           </p>
         </section>
 

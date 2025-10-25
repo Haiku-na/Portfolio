@@ -12,9 +12,9 @@ export default function Lumiere() {
           <h2 className="text-3xl font-bold border-b-2 border-white pb-2">Jeu de reflexe</h2>
 
           <p className=" leading-relaxed">
-            Projet réalisé avec une camarade dans le cadre du Bachelor Informatique à l'école Hexagone.
-            C'est un jeu consistant à appuué sur un bouton quand la led du centre est alumé.
-            Un seven segment display permet d'afficher le niveau et l'intensité des les changent en fonction de la lumière extérieure
+            Projet réalisé avec une camarade dans le cadre du Bachelor Informatique à l’école Hexagone. <br />
+            Il s’agit d’un jeu de réflexe consistant à appuyer sur un bouton lorsque la LED centrale est allumée. <br />
+            Un afficheur à sept segments indique le niveau du joueur, et l’intensité des LEDs s’ajuste automatiquement en fonction de la lumière ambiante.
           </p>
         </section>
 

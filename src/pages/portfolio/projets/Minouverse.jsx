@@ -12,7 +12,7 @@ export default function Minouverse() {
           <h2 className="text-3xl font-bold border-b-2 border-white pb-2">Tamamonstra – Tamagotchi Arduino</h2>
 
           <p className=" leading-relaxed">
-            Projet réalisé dans le cadre du Bachelor Informatique à l'école Hexagone.
+            Projet réalisé dans le cadre du Bachelor Informatique à l'école Hexagone. 
             Tamamonstra est un Tamagotchi interactif où l’utilisateur prend soin d’un petit monstre virtuel.
             Le monstre doit manger, dormir, jouer, se laver et être soigné, et peut partir à l’aventure pour gagner de l’argent et des ressources.
           </p>
