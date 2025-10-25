@@ -9,7 +9,7 @@ export default function Recrutement() {
       <div className="container mx-auto px-6 py-12 space-y-12">
 
         <section className="space-y-6">
-          <h2 className="text-3xl font-bold border-b-2 border-white pb-2">Tamamonstra – Tamagotchi Arduino</h2>
+          <h2 className="text-3xl font-bold border-b-2 border-white pb-2">Site de recrutement</h2>
 
           <p className=" leading-relaxed">
             Projet réalisé en équipe de trois dans le cadre du Pré-Master of Science à Epitech. <br />
@@ -56,10 +56,10 @@ export default function Recrutement() {
 
         <section className="bg-gray-900 p-6 rounded-xl shadow-lg space-y-4">
           <h3 className="text-2xl font-semibold border-b border-gray-700 ">Modèles</h3>
-          <div className="flex">
-            <div className="flex-1">
+          <div className="grid lg:grid-cols-2 grid-cols-1 justify-items-center">
+            <div className="w-full">
               <p className="text-xl font-semibold">Utilisateur</p>
-              <table className=" text-sm text-left rtl:text-right text-gray-400 rounded-xl">
+              <table className="w-4/5 text-sm text-left rtl:text-right text-gray-400 rounded-xl">
                 <thead className="text-xs bg-gray-700 text-gray-400">
                   <tr>
                     <th scope="col" className="px-6 py-3">CHAMP</th>
@@ -130,9 +130,9 @@ export default function Recrutement() {
                 </tbody>
               </table>
             </div>
-            <div className="flex-1">
+            <div className="w-full">
               <p className="text-xl font-semibold">Entreprise</p>
-              <table className="text-sm text-left rtl:text-right text-gray-400 rounded-xl">
+              <table className="w-4/5 text-sm text-left rtl:text-right text-gray-400 rounded-xl">
                 <thead className="text-xs bg-gray-700 text-gray-400">
                   <tr>
                     <th scope="col" className="px-6 py-3">CHAMP</th>
@@ -167,9 +167,9 @@ export default function Recrutement() {
                 </tbody>
               </table>
             </div>
-            <div className="flex-1">
+            <div className="w-full">
               <p className="text-xl font-semibold">Annonce</p>
-              <table className="text-sm text-left rtl:text-right text-gray-400 rounded-xl">
+              <table className="w-4/5 text-sm text-left rtl:text-right text-gray-400 rounded-xl">
                 <thead className="text-xs bg-gray-700 text-gray-400">
                   <tr>
                     <th scope="col" className="px-6 py-3">CHAMP</th>
@@ -220,9 +220,9 @@ export default function Recrutement() {
                 </tbody>
               </table>
             </div>
-            <div className="flex-1">
+            <div className="w-full justify-center">
               <p className="text-xl font-semibold">Candidature</p>
-              <table className="text-sm text-left rtl:text-right text-gray-400 rounded-xl">
+              <table className="w-4/5 text-sm text-left rtl:text-right text-gray-400 rounded-xl">
                 <thead className="text-xs bg-gray-700 text-gray-400">
                   <tr>
                     <th scope="col" className="px-6 py-3">CHAMP</th>
@@ -297,50 +297,22 @@ export default function Recrutement() {
           </ul>
         </section>
 
-
-        <section className="bg-gray-900 p-6 rounded-xl shadow-lg space-y-4 ">
-          <h3 className="text-2xl font-semibold border-b border-gray-700 ">images et l’arborescence du jeu</h3>
-          <div className="flex flex-col items-center">
-            <img src="/projets/tamagoshi/arborescence.png" alt="image jeux" />
-          </div>
-        </section>
-
         <section className="bg-gray-900 p-6 rounded-xl shadow-lg space-y-4">
           <h3 className="text-2xl font-semibold border-b border-gray-700 ">Résultats et compétences</h3>
-          <ul className="list-disc list-inside space-y-1 ">
-            <li>Création d’un système interactif avec état persistant</li>
-            <li>Programmation embarquée en C/C++ sur ESP32</li>
-            <li>Gestion de mini-jeux et combats avec calcul des récompenses</li>
-            <li>Conception d’un boîtier fonctionnel et esthétique sur Tinkercad</li>
+          <ul className="list-disc list-inside space-y-1">
+            <li>Création d’une plateforme de recrutement complète avec gestion des annonces et candidatures</li>
+            <li>Développement frontend avec Next.js pour une interface réactive et intuitive</li>
+            <li>Implémentation backend avec Django REST Framework et API REST pour la communication front/back</li>
+            <li>Conception et gestion d’une base de données MySQL avec relations entre utilisateurs, annonces, entreprises et candidatures</li>
+            <li>Mise en place d’un système d’authentification et de rôles (candidat, recruteur, administrateur)</li>
+            <li>Gestion des formulaires et des interactions utilisateurs (postuler, créer/modifier/supprimer annonces, consulter candidatures)</li>
+            <li>Utilisation de Tailwind CSS pour un design moderne et responsive</li>
+            <li>Déploiement et tests locaux de l’application avec synchronisation frontend/back-end</li>
           </ul>
-          <a href="https://github.com/Haiku-na/Tamagoshi" target="_blank" className="inline-block mt-2 px-4 py-2 bg-indigo-600 hover:bg-indigo-500 rounded-lg transition">
+          <a href="https://github.com/Haiku-na/Siet-recrutement" target="_blank" className="inline-block mt-2 px-4 py-2 bg-indigo-600 hover:bg-indigo-500 rounded-lg transition">
             Voir le code sur GitHub
           </a>
         </section>
-
-        <section className="bg-gray-900 p-6 rounded-xl shadow-lg space-y-4">
-          <h3 className="text-2xl font-semibold border-b border-gray-700 ">Ressources supplémentaires</h3>
-          <p className="text-gray-300">Vous pouvez télécharger la fiche technique et fonctionnelle, ou regarder la vidéo de démonstration :</p>
-          <div className="flex flex-col items-center">
-            <div className="w-full sm:w-1/2">
-              <video className="rounded-xl shadow-md w-full" controls src="/projets/tamagoshi/VAUTRIN Appoline Tamamonstra.mp4" >
-                Votre navigateur ne supporte pas la vidéo.
-              </video>
-            </div>
-            <div className="flex flex-col sm:flex-row gap-4 m-2 ">
-              <a href="/projets/tamagoshi/VAUTRIN Appoline documentations techniques.pdf" download className="inline-block px-4 py-2 bg-blue-600 hover:bg-blue-500 rounded-lg text-white text-center transition" >
-                Télécharger la notice
-              </a>
-
-              <a href="/projets/tamagoshi/VAUTRIN Appoline documentation à destination des utilisateurs.pdf" download className="inline-block px-4 py-2 bg-green-600 hover:bg-green-500 rounded-lg text-white text-center transition">
-                Télécharger la fiche technique
-              </a>
-            </div>
-          </div>
-
-        </section>
-
-
       </div>
     </div>
   );
