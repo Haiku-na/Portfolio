@@ -14,27 +14,27 @@ export default function Projets() {
     {
       title: "Projet Zelda",
       description: "Projet consistant à tester l'utilisation d'API externe",
-      image: "/whoiam-p/jeux.jpg",
+      image: "/projets/zelda/accueil.png",
       page: "/portfolio/projets/projetzelda",
     },
     {
       title: "Minouverse",
       description: "Projet en groupe consistant à créer un twitter-like",
-      image: "/whoiam-p/maquette.jpg",
+      image: "/projets/minouverse/minouverse.png",
       page: "/portfolio/projets/minouverse",
     },
     {
       title: "Jeu de lumière",
       description:
         "Création d'un mini jeu de réflexe avec des lumières en Arduino",
-      image: "/whoiam-p/gateau.jpg",
+      image: "/projets/jeulumiere/construction.png",
       page: "/portfolio/projets/jeulumiere",
     },
     {
       title: "Site de recrutement médiéval",
       description:
         "Projet de groupe consistant à créer un site de recrutement complet avec une API REST.",
-      image: "/whoiam-p/gateau.jpg",
+      image: "/projets/siterecrutement/accueil.png",
       page: "/portfolio/projets/siterecrutement",
     },
   ];

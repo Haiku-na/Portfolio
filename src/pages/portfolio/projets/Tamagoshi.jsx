@@ -22,7 +22,7 @@ export default function Tamagoshi() {
           <h3 className="text-2xl font-semibold border-b border-gray-700 ">Matériel et composants</h3>
           <ul className="list-disc list-inside space-y-1 ">
             <li>Carte ESP32 – cœur du dispositif et stockage des données persistantes</li>
-            <li>Trois boutons poussoirs – interactions avec le monstre</li>
+            <li>3 boutons poussoirs – interactions avec le monstre</li>
             <li>Écran OLED – affichage du jeu</li>
             <li>Boîtier modélisé avec Tinkercad</li>
             <li>Fils électriques – connexions entre composants</li>
@@ -32,7 +32,7 @@ export default function Tamagoshi() {
         <section className="bg-gray-900 p-6 rounded-xl shadow-lg space-y-4">
           <h3 className="text-2xl font-semibold border-b border-gray-700 ">Schéma électronique et boîtier</h3>
           <div className=" flex flex-col items-center">
-            <img className="rounded-xl shadow-md w-100 md:w-2/3 pb-5" src="/projets/tamagoshi/shematech.png" alt="Shéma technique" />
+            <img className="rounded-xl shadow-md w-100 md:w-2/3 pb-5" src="/projets/tamagoshi/shematech.png" alt="Schéma electronique" />
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 justify-items-center">
               <img className="rounded-xl shadow-md" src="/projets/tamagoshi/boitier.png" alt="Boîtier Tamamonstra intérieur" />
               <ul className="list-disc list-inside space-y-1  content-center">

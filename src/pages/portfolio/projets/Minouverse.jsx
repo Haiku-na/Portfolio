@@ -98,7 +98,7 @@ export default function Minouverse() {
           <h3 className="text-2xl font-semibold border-b border-gray-700 ">Résultats et compétences</h3>
           <ul className="list-disc list-inside space-y-1 ">
             <li>Création d’un système interactif avec état persistant</li>
-            <li>Programmation embarquée en C/C++ sur ESP32</li>
+            <li>Programmation embarquée en C sur ESP32</li>
             <li>Gestion de mini-jeux et combats avec calcul des récompenses</li>
             <li>Conception d’un boîtier fonctionnel et esthétique sur Tinkercad</li>
           </ul>

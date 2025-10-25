@@ -9,126 +9,78 @@ export default function Lumiere() {
       <div className="container mx-auto px-6 py-12 space-y-12">
 
         <section className="space-y-6">
-          <h2 className="text-3xl font-bold border-b-2 border-white pb-2">Tamamonstra – Tamagotchi Arduino</h2>
+          <h2 className="text-3xl font-bold border-b-2 border-white pb-2">Jeu de reflexe</h2>
 
           <p className=" leading-relaxed">
-            Projet réalisé dans le cadre du Bachelor Informatique à l'école Hexagone.
-            Tamamonstra est un Tamagotchi interactif où l’utilisateur prend soin d’un petit monstre virtuel.
-            Le monstre doit manger, dormir, jouer, se laver et être soigné, et peut partir à l’aventure pour gagner de l’argent et des ressources.
+            Projet réalisé avec une camarade dans le cadre du Bachelor Informatique à l'école Hexagone.
+            C'est un jeu consistant à appuué sur un bouton quand la led du centre est alumé.
+            Un seven segment display permet d'afficher le niveau et l'intensité des les changent en fonction de la lumière extérieure
           </p>
         </section>
 
         <section className="bg-gray-900 p-6 rounded-xl shadow-lg space-y-4">
           <h3 className="text-2xl font-semibold border-b border-gray-700 ">Matériel et composants</h3>
           <ul className="list-disc list-inside space-y-1 ">
-            <li>Carte ESP32 – cœur du dispositif et stockage des données persistantes</li>
-            <li>Trois boutons poussoirs – interactions avec le monstre</li>
-            <li>Écran OLED – affichage du jeu</li>
-            <li>Boîtier modélisé avec Tinkercad</li>
-            <li>Fils électriques – connexions entre composants</li>
+            <li>carte Arduino Uno </li>
+            <li>Bouton poussoir</li>
+            <li>Seven segment display</li>
+            <li>1 led rouge</li>
+            <li>4 leds bleus</li>
+            <li>Capteur de photorestance</li>
+            <li>11 Resisatances 220 Ω</li>
+            <li>1 Resistance 200 Ω</li>
+            <li>2 Resisatances 10k Ω</li>
           </ul>
         </section>
 
         <section className="bg-gray-900 p-6 rounded-xl shadow-lg space-y-4">
-          <h3 className="text-2xl font-semibold border-b border-gray-700 ">Schéma électronique et boîtier</h3>
+          <h3 className="text-2xl font-semibold border-b border-gray-700 ">Schéma électronique et modélisation tinkecard</h3>
           <div className=" flex flex-col items-center">
-            <img className="rounded-xl shadow-md w-100 md:w-2/3 pb-5" src="/projets/tamagoshi/shematech.png" alt="Shéma technique" />
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 justify-items-center">
-              <img className="rounded-xl shadow-md" src="/projets/tamagoshi/boitier.png" alt="Boîtier Tamamonstra intérieur" />
-              <ul className="list-disc list-inside space-y-1  content-center">
-                <li>	Le boitier est composé de deux parties facilitant la fermeture du boitier. On peut les faire glisser pour assurer une fermeture optimale. </li>
-                <li>	Les différentes barres permettent de caler les différents éléments contenus dans le boitier. </li>
-                <li>	Trois trous pour les trois boutons et une dernier pour le l’écran. </li>
-                <li>	Les deux barres dans la partie basse du boiter sert a placer la carte ESP32 et l’Arche permet de caler l’ESP32 une fois le boitier fermé.  Un trou pour faire passer les fils. </li>
-              </ul>
+            <img className="rounded-xl w-100 md:w-1/2 pb-5" src="/projets/jeulumiere/tinkercard.png" alt="Schéma electronique" />
+            <div className="flex flex-col md:flex-row justify-center items-center gap-6 w-full">
+              <img
+                className="rounded-xl w-full md:w-1/2" src="/projets/jeulumiere/mod1.png" alt="Modélisation 1" />
+              <img
+                className="rounded-xl w-full md:w-1/2" src="/projets/jeulumiere/mod2.png" alt="Modélisation 2" />
             </div>
           </div>
         </section>
 
         <section className="bg-gray-900 p-6 rounded-xl shadow-lg space-y-4">
-          <h3 className="text-2xl font-semibold border-b border-gray-700 ">Bibliothèques Arduino utilisées</h3>
-          <ul className="list-disc list-inside space-y-1 ">
-            <li><strong>Preferences.h :</strong> sauvegarde des données persistantes (états du monstre, paramètres utilisateur)</li>
-            <li><strong>SPI.h :</strong> communication rapide avec périphériques SPI</li>
-            <li><strong>Wire.h :</strong> communication I2C pour capteurs et écran OLED</li>
-            <li><strong>Adafruit_GFX.h :</strong> dessin d’éléments graphiques (texte, formes)</li>
-            <li><strong>Adafruit_SSD1306.h :</strong> gestion de l’écran OLED SSD1306</li>
-          </ul>
-        </section>
-
-        <section className="bg-gray-900 p-6 rounded-xl shadow-lg space-y-4">
-          <h3 className="text-2xl font-semibold border-b border-gray-700 ">Fonctions clés</h3>
-          <p className="">Plus de 20 fonctions ont été créées pour gérer le gameplay et les interactions :</p>
-          <ul className="list-disc list-inside space-y-1 ">
-            <li>recuperation(), sauvegarde() – gestion des données persistantes</li>
-            <li>menu(), fenetreStat() – navigation dans le menu et affichage des stats</li>
-            <li>aventure(), combat(), recompenses() – mini-jeux et combats</li>
-            <li>chercherPomme(), pauseJeu(), pommesRecuperees() – mini-jeu de récolte de pommes</li>
-            <li>magasin(), achatFood(), achatPotions() – achats et gestion des ressources</li>
-            <li>manger(), dormir(), laver(), soigner() – actions principales du monstre</li>
-            <li>mourir() – gestion de la mort et réinitialisation</li>
-          </ul>
-        </section>
-
-        <section className="bg-gray-900 p-6 rounded-xl shadow-lg space-y-4">
-          <h3 className="text-2xl font-semibold border-b border-gray-700 ">Gameplay</h3>
-          <p className="">Le joueur interagit avec le monstre via l’écran OLED et les boutons :</p>
-          <ul className="list-disc list-inside space-y-2 ">
-            <li><strong>Manger :</strong> choisir la nourriture dans la cuisine et nourrir le monstre</li>
-            <li><strong>Dormir :</strong> suivre la fatigue et le temps de sommeil</li>
-            <li><strong>Se laver et soigner :</strong> animations et gestion de la santé du monstre</li>
-            <li><strong>Mini-jeux :</strong>
-              <ul className="list-disc list-inside pl-4 space-y-1">
-                <li>Ramassage de pommes – attraper jusqu’à 15 pommes et vendre ou stocker</li>
-                <li>Aventure en forêt – combats contre des créatures avec choix d’attaque, potion ou fuite</li>
-              </ul>
-            </li>
-            <li><strong>Magasin :</strong> achat de nourriture et de potions avec l’argent gagné</li>
+          <h3 className="text-2xl font-semibold border-b border-gray-700 ">Fonctionnement du jeu</h3>
+          <p className="">Ce jeu marche de très simplement:</p>
+          <ul className="list-disc list-inside space-y-1">
+            <li>setup() – Initialise les LEDs, le bouton et la connexion avec le moniteur série</li>
+            <li>loop() – Fait clignoter les LEDs une par une et vérifie si le bouton est appuyé</li>
+            <li>blink() – Allume une LED pendant un certain temps et appelle la fonction de vérification du bouton</li>
+            <li>press() – Vérifie si le bouton est appuyé pendant qu’une LED est allumée</li>
+            <li>gagner() – Indique si le bouton est appuyé ou relâché et ajoute un point quand la LED rouge est active</li>
           </ul>
         </section>
 
         <section className="bg-gray-900 p-6 rounded-xl shadow-lg space-y-4 ">
-          <h3 className="text-2xl font-semibold border-b border-gray-700 ">images et l’arborescence du jeu</h3>
+          <h3 className="text-2xl font-semibold border-b border-gray-700 ">vidéo du gameplay</h3>
           <div className="flex flex-col items-center">
-            <img src="/projets/tamagoshi/arborescence.png" alt="image jeux" />
+            <video className="rounded-xl shadow-md w-100 h-100" controls src="/projets/jeulumiere/demonstration.mp4" >
+              Votre navigateur ne supporte pas la vidéo.
+            </video>
           </div>
         </section>
 
         <section className="bg-gray-900 p-6 rounded-xl shadow-lg space-y-4">
           <h3 className="text-2xl font-semibold border-b border-gray-700 ">Résultats et compétences</h3>
-          <ul className="list-disc list-inside space-y-1 ">
-            <li>Création d’un système interactif avec état persistant</li>
-            <li>Programmation embarquée en C/C++ sur ESP32</li>
-            <li>Gestion de mini-jeux et combats avec calcul des récompenses</li>
-            <li>Conception d’un boîtier fonctionnel et esthétique sur Tinkercad</li>
+          <ul className="list-disc list-inside space-y-1">
+            <li>Création d'un jeu de réflexe interactif basé sur des LED et un bouton</li>
+            <li>Programmation embarquée en C++ sur une carte Arduino Uno</li>
+            <li>Utilisation du moniteur série pour le débogage et le suivi des interactions</li>
+            <li>Conception et modélisation du circuit électronique sur Tinkercad</li>
+            <li>Gestion de l’intensité lumineuse à l’aide d’un capteur de photorésistance</li>
+            <li>Travail en binôme : répartition des tâches entre le code, le câblage et la modélisation</li>
           </ul>
-          <a href="https://github.com/Haiku-na/Tamagoshi" target="_blank" className="inline-block mt-2 px-4 py-2 bg-indigo-600 hover:bg-indigo-500 rounded-lg transition">
+          <a href="https://github.com/Haiku-na/Jeu-lumiere" target="_blank" className="inline-block mt-2 px-4 py-2 bg-indigo-600 hover:bg-indigo-500 rounded-lg transition">
             Voir le code sur GitHub
           </a>
         </section>
-
-        <section className="bg-gray-900 p-6 rounded-xl shadow-lg space-y-4">
-          <h3 className="text-2xl font-semibold border-b border-gray-700 ">Ressources supplémentaires</h3>
-          <p className="text-gray-300">Vous pouvez télécharger la fiche technique et fonctionnelle, ou regarder la vidéo de démonstration :</p>
-          <div className="flex flex-col items-center">
-            <div className="w-full sm:w-1/2">
-              <video className="rounded-xl shadow-md w-full" controls src="/projets/tamagoshi/VAUTRIN Appoline Tamamonstra.mp4" >
-                Votre navigateur ne supporte pas la vidéo.
-              </video>
-            </div>
-            <div className="flex flex-col sm:flex-row gap-4 m-2 ">
-              <a href="/projets/tamagoshi/VAUTRIN Appoline documentations techniques.pdf" download className="inline-block px-4 py-2 bg-blue-600 hover:bg-blue-500 rounded-lg text-white text-center transition" >
-                Télécharger la notice
-              </a>
-
-              <a href="/projets/tamagoshi/VAUTRIN Appoline documentation à destination des utilisateurs.pdf" download className="inline-block px-4 py-2 bg-green-600 hover:bg-green-500 rounded-lg text-white text-center transition">
-                Télécharger la fiche technique
-              </a>
-            </div>
-          </div>
-
-        </section>
-
 
       </div>
     </div>
