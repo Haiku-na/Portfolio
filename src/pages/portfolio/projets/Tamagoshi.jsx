@@ -6,6 +6,14 @@ export default function Tamagoshi() {
   return (
     <div className="flex flex-col min-h-screen text-white">
       <Navbar_portfolio />
+      <div className="flex justify-between px-6 py-4">
+        <a href="/portfolio/projets/minouverse" className="text-white p-3 bg-gray-800 rounded-xl hover:bg-gray-900 hover:text-gray-200">
+          Projet précédent
+        </a>
+        <a href="/portfolio/projets/siterecrutement" className="text-white p-3 bg-gray-800 rounded-xl hover:bg-gray-900 hover:text-gray-200">
+          Projet suivant
+        </a>
+      </div>
       <div className="container mx-auto px-6 py-12 space-y-12">
 
         <section className="space-y-6">
