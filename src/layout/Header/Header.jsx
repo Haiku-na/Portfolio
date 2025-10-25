@@ -7,16 +7,13 @@ export default function Header() {
   const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const pageNames = {
-    "/": "Accueil",
-    "/contact": "Contact",
-    "/portfolio/competences": "Portfolio",
-    "/portfolio/experience_pro": "Portfolio",
-    "/portfolio/qui_je_suis": "Portfolio",
-    "/portfolio/formations": "Portfolio",
-    "/portfolio/projets": "Portfolio"
+  const getPageName = (path) => {
+    if (path === "/") return "Accueil";
+    if (path === "/contact") return "Contact";
+    if (path.startsWith("/portfolio")) return "Portfolio";
+    return "404";
   };
-  const pageName = pageNames[location.pathname];
+  const pageName = getPageName(location.pathname);
 
   const toggleMenu = () => {
     setIsMenuOpen((prev) => !prev);

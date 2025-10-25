@@ -9,6 +9,7 @@ import Experience_Pro from "../pages/portfolio/Expepro";
 import Competences from "../pages/portfolio/Competences";
 import Whoami from "../pages/portfolio/whoami";
 import Formations from "../pages/portfolio/Formations";
+import Tamagoshi from "../pages/portfolio/projets/Tamagoshi";
 
 export default function Router() {
   return (
@@ -21,6 +22,7 @@ export default function Router() {
       <Route path="/portfolio/experience_pro" element={<Experience_Pro/>} />
       <Route path="/portfolio/qui_je_suis" element={<Whoami/>} />
       <Route path="/portfolio/formations" element={<Formations/>} />
+      <Route path="/portfolio/projets/tamagoshi" element={<Tamagoshi/>} />
     </Routes>
   );
 }
