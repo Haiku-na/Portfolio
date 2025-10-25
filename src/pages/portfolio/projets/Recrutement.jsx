@@ -18,73 +18,285 @@ export default function Recrutement() {
         </section>
 
         <section className="bg-gray-900 p-6 rounded-xl shadow-lg space-y-4">
-          <h3 className="text-2xl font-semibold border-b border-gray-700 ">Matériel et composants</h3>
+          <h3 className="text-2xl font-semibold border-b border-gray-700 ">Technologies Utilisées</h3>
           <ul className="list-disc list-inside space-y-1 ">
-            <li>Carte ESP32 – cœur du dispositif et stockage des données persistantes</li>
-            <li>Trois boutons poussoirs – interactions avec le monstre</li>
-            <li>Écran OLED – affichage du jeu</li>
-            <li>Boîtier modélisé avec Tinkercad</li>
-            <li>Fils électriques – connexions entre composants</li>
+            <li><strong>Backend :</strong> Django REST Framework</li>
+            <li><strong>Frontend :</strong> Next.js</li>
+            <li><strong>Base de données :</strong> MySQL</li>
+            <li><strong>Framework de style :</strong> Tailwind CSS</li>
           </ul>
         </section>
 
         <section className="bg-gray-900 p-6 rounded-xl shadow-lg space-y-4">
-          <h3 className="text-2xl font-semibold border-b border-gray-700 ">Schéma électronique et boîtier</h3>
-          <div className=" flex flex-col items-center">
-            <img className="rounded-xl shadow-md w-100 md:w-2/3 pb-5" src="/projets/tamagoshi/shematech.png" alt="Shéma technique" />
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 justify-items-center">
-              <img className="rounded-xl shadow-md" src="/projets/tamagoshi/boitier.png" alt="Boîtier Tamamonstra intérieur" />
-              <ul className="list-disc list-inside space-y-1  content-center">
-                <li>	Le boitier est composé de deux parties facilitant la fermeture du boitier. On peut les faire glisser pour assurer une fermeture optimale. </li>
-                <li>	Les différentes barres permettent de caler les différents éléments contenus dans le boitier. </li>
-                <li>	Trois trous pour les trois boutons et une dernier pour le l’écran. </li>
-                <li>	Les deux barres dans la partie basse du boiter sert a placer la carte ESP32 et l’Arche permet de caler l’ESP32 une fois le boitier fermé.  Un trou pour faire passer les fils. </li>
-              </ul>
+          <h3 className="text-2xl font-semibold border-b border-gray-700">Structure du projet</h3>
+          <p className="whitespace-pre">
+            {`T-WEB-501-PAR_11/
+│
+├── backend/
+│   ├── api/
+│   ├── backend/
+│   ├── env/
+│   ├── media/
+│   ├── manage.py
+│   └── requirements.txt
+│
+├── frontend/
+│   ├── app/
+│   ├── public/
+│   ├── .env
+│   ├── package.json
+│   ├── next.config.ts
+│   └── ...
+│
+└── README.md`}
+          </p>
+
+        </section>
+
+
+        <section className="bg-gray-900 p-6 rounded-xl shadow-lg space-y-4">
+          <h3 className="text-2xl font-semibold border-b border-gray-700 ">Modèles</h3>
+          <div className="flex">
+            <div className="flex-1">
+              <p className="text-xl font-semibold">Utilisateur</p>
+              <table className=" text-sm text-left rtl:text-right text-gray-400 rounded-xl">
+                <thead className="text-xs bg-gray-700 text-gray-400">
+                  <tr>
+                    <th scope="col" className="px-6 py-3">CHAMP</th>
+                    <th scope="col" className="px-6 py-3">TYPE</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b bg-gray-800 border-gray-700">
+                    <th scope="row" className="p-2 font-medium text-white">id_user</th>
+                    <td className="p-4">UUID (clé primaire)</td>
+                  </tr>
+                  <tr className="border-b bg-gray-800 border-gray-700">
+                    <th scope="row" className="p-2 font-medium text-white">id_user</th>
+                    <td className="p-4">UUID (clé primaire)</td>
+                  </tr>
+                  <tr className="border-b bg-gray-800 border-gray-700">
+                    <th scope="row" className="p-2 font-medium text-white">id_user</th>
+                    <td className="p-4">UUID (clé primaire)</td>
+                  </tr>
+                  <tr className="border-b bg-gray-800 border-gray-700">
+                    <th scope="row" className="p-2 font-medium text-white">nom_user</th>
+                    <td className="p-4">CharField(100)</td>
+                  </tr>
+                  <tr className="border-b bg-gray-800 border-gray-700">
+                    <th scope="row" className="p-2 font-medium text-white">prenom_user</th>
+                    <td className="p-4">CharField(100)</td>
+                  </tr>
+                  <tr className="border-b bg-gray-800 border-gray-700">
+                    <th scope="row" className="p-2 font-medium text-white">mail_user</th>
+                    <td className="p-4">CharField(100, unique)</td>
+                  </tr>
+                  <tr className="border-b bg-gray-800 border-gray-700">
+                    <th scope="row" className="p-2 font-medium text-white">tel_user</th>
+                    <td className="p-4">PhoneNumberField</td>
+                  </tr>
+                  <tr className="border-b bg-gray-800 border-gray-700">
+                    <th scope="row" className="p-2 font-medium text-white">adresse_user</th>
+                    <td className="p-4">CharField(100)</td>
+                  </tr>
+                  <tr className="border-b bg-gray-800 border-gray-700">
+                    <th scope="row" className="p-2 font-medium text-white">cp_user</th>
+                    <td className="p-4">CharField(10)</td>
+                  </tr>
+                  <tr className="border-b bg-gray-800 border-gray-700">
+                    <th scope="row" className="p-2 font-medium text-white">pays_user</th>
+                    <td className="p-4">CharField(100)</td>
+                  </tr>
+                  <tr className="border-b bg-gray-800 border-gray-700">
+                    <th scope="row" className="p-2 font-medium text-white">employeur_user</th>
+                    <td className="p-4">IntegerField</td>
+                  </tr>
+                  <tr className="border-b bg-gray-800 border-gray-700">
+                    <th scope="row" className="p-2 font-medium text-white">mdp_user</th>
+                    <td className="p-4">CharField(100)</td>
+                  </tr>
+                  <tr className="border-b bg-gray-800 border-gray-700">
+                    <th scope="row" className="p-2 font-medium text-white">cv</th>
+                    <td className="p-4">FileField</td>
+                  </tr>
+                  <tr className="border-b bg-gray-800 border-gray-700">
+                    <th scope="row" className="p-2 font-medium text-white">id_entreprise</th>
+                    <td className="p-4">clé étrangère -&gt; Entreprise</td>
+                  </tr>
+                  <tr className="border-b bg-gray-800 border-gray-700">
+                    <th scope="row" className="p-2 font-medium text-white">admin_user</th>
+                    <td className="p-4">BooleanField</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div className="flex-1">
+              <p className="text-xl font-semibold">Entreprise</p>
+              <table className="text-sm text-left rtl:text-right text-gray-400 rounded-xl">
+                <thead className="text-xs bg-gray-700 text-gray-400">
+                  <tr>
+                    <th scope="col" className="px-6 py-3">CHAMP</th>
+                    <th scope="col" className="px-6 py-3">TYPE</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b bg-gray-800 border-gray-700">
+                    <th scope="row" className="p-2 font-medium text-white">id_entreprise</th>
+                    <td className="p-4">UUID (clé primaire)</td>
+                  </tr>
+                  <tr className="border-b bg-gray-800 border-gray-700">
+                    <th scope="row" className="p-2 font-medium text-white">nom_entreprise</th>
+                    <td className="p-4">CharField(100)</td>
+                  </tr>
+                  <tr className="border-b bg-gray-800 border-gray-700">
+                    <th scope="row" className="p-2 font-medium text-white">descrip_entreprise</th>
+                    <td className="p-4">CharField(1000)</td>
+                  </tr>
+                  <tr className="border-b bg-gray-800 border-gray-700">
+                    <th scope="row" className="p-2 font-medium text-white">secteur_entreprise</th>
+                    <td className="p-4">CharField(1000)</td>
+                  </tr>
+                  <tr className="border-b bg-gray-800 border-gray-700">
+                    <th scope="row" className="p-2 font-medium text-white">url_site_entreprise</th>
+                    <td className="p-4">CharField(1000)</td>
+                  </tr>
+                  <tr className="border-b bg-gray-800 border-gray-700">
+                    <th scope="row" className="p-2 font-medium text-white">logo_entreprise</th>
+                    <td className="p-4">FileField</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div className="flex-1">
+              <p className="text-xl font-semibold">Annonce</p>
+              <table className="text-sm text-left rtl:text-right text-gray-400 rounded-xl">
+                <thead className="text-xs bg-gray-700 text-gray-400">
+                  <tr>
+                    <th scope="col" className="px-6 py-3">CHAMP</th>
+                    <th scope="col" className="px-6 py-3">TYPE</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b bg-gray-800 border-gray-700">
+                    <th scope="row" className="p-2 font-medium text-white">id_annonce</th>
+                    <td className="p-4">UUID (clé primaire)</td>
+                  </tr>
+                  <tr className="border-b bg-gray-800 border-gray-700">
+                    <th scope="row" className="p-2 font-medium text-white">id_entreprise</th>
+                    <td className="p-4">clé étrangère -&gt; Entreprise</td>
+                  </tr>
+                  <tr className="border-b bg-gray-800 border-gray-700">
+                    <th scope="row" className="p-2 font-medium text-white">id_recruteur</th>
+                    <td className="p-4">clé étrangère -&gt; Utilisateur</td>
+                  </tr>
+                  <tr className="border-b bg-gray-800 border-gray-700">
+                    <th scope="row" className="p-2 font-medium text-white">cp_annonce</th>
+                    <td className="p-4">CharField(100)</td>
+                  </tr>
+                  <tr className="border-b bg-gray-800 border-gray-700">
+                    <th scope="row" className="p-2 font-medium text-white">ville_annonce</th>
+                    <td className="p-4">CharField(100)</td>
+                  </tr>
+                  <tr className="border-b bg-gray-800 border-gray-700">
+                    <th scope="row" className="p-2 font-medium text-white">type_contract</th>
+                    <td className="p-4">CharField(100)</td>
+                  </tr>
+                  <tr className="border-b bg-gray-800 border-gray-700">
+                    <th scope="row" className="p-2 font-medium text-white">salaire</th>
+                    <td className="p-4">CharField(200)</td>
+                  </tr>
+                  <tr className="border-b bg-gray-800 border-gray-700">
+                    <th scope="row" className="p-2 font-medium text-white">avantage</th>
+                    <td className="p-4">CharField(100)</td>
+                  </tr>
+                  <tr className="border-b bg-gray-800 border-gray-700">
+                    <th scope="row" className="p-2 font-medium text-white">descrip_annonce</th>
+                    <td className="p-4">CharField(1000)</td>
+                  </tr>
+                  <tr className="border-b bg-gray-800 border-gray-700">
+                    <th scope="row" className="p-2 font-medium text-white">date_publication</th>
+                    <td className="p-4">DateTime</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div className="flex-1">
+              <p className="text-xl font-semibold">Candidature</p>
+              <table className="text-sm text-left rtl:text-right text-gray-400 rounded-xl">
+                <thead className="text-xs bg-gray-700 text-gray-400">
+                  <tr>
+                    <th scope="col" className="px-6 py-3">CHAMP</th>
+                    <th scope="col" className="px-6 py-3">TYPE</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b bg-gray-800 border-gray-700">
+                    <th scope="row" className="p-2 font-medium text-white">id_candidature</th>
+                    <td className="p-4">UUID (clé primaire)</td>
+                  </tr>
+                  <tr className="border-b bg-gray-800 border-gray-700">
+                    <th scope="row" className="p-2 font-medium text-white">id_annonce</th>
+                    <td className="p-4">clé étrangère -&gt; Annonce</td>
+                  </tr>
+                  <tr className="border-b bg-gray-800 border-gray-700">
+                    <th scope="row" className="p-2 font-medium text-white">id_user</th>
+                    <td className="p-4">clé étrangère -&gt; Utilisateur</td>
+                  </tr>
+                  <tr className="border-b bg-gray-800 border-gray-700">
+                    <th scope="row" className="p-2 font-medium text-white">date</th>
+                    <td className="p-4">DateTime</td>
+                  </tr>
+                  <tr className="border-b bg-gray-800 border-gray-700">
+                    <th scope="row" className="p-2 font-medium text-white">message</th>
+                    <td className="p-4">CharField(1000)</td>
+                  </tr>
+                  <tr className="border-b bg-gray-800 border-gray-700">
+                    <th scope="row" className="p-2 font-medium text-white">nom_user</th>
+                    <td className="p-4">CharField(100)</td>
+                  </tr>
+                  <tr className="border-b bg-gray-800 border-gray-700">
+                    <th scope="row" className="p-2 font-medium text-white">prenom_user</th>
+                    <td className="p-4">CharField(100)</td>
+                  </tr>
+                  <tr className="border-b bg-gray-800 border-gray-700">
+                    <th scope="row" className="p-2 font-medium text-white">tel_user</th>
+                    <td className="p-4">PhoneNumberField</td>
+                  </tr>
+                  <tr className="border-b bg-gray-800 border-gray-700">
+                    <th scope="row" className="p-2 font-medium text-white">email_user</th>
+                    <td className="p-4">CharField(100)</td>
+                  </tr>
+                  <tr className="border-b bg-gray-800 border-gray-700">
+                    <th scope="row" className="p-2 font-medium text-white">statut</th>
+                    <td className="p-4">CharField(50)</td>
+                  </tr>
+                  <tr className="border-b bg-gray-800 border-gray-700">
+                    <th scope="row" className="p-2 font-medium text-white">cv</th>
+                    <td className="p-4">FileField</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
+
         </section>
 
         <section className="bg-gray-900 p-6 rounded-xl shadow-lg space-y-4">
-          <h3 className="text-2xl font-semibold border-b border-gray-700 ">Bibliothèques Arduino utilisées</h3>
-          <ul className="list-disc list-inside space-y-1 ">
-            <li><strong>Preferences.h :</strong> sauvegarde des données persistantes (états du monstre, paramètres utilisateur)</li>
-            <li><strong>SPI.h :</strong> communication rapide avec périphériques SPI</li>
-            <li><strong>Wire.h :</strong> communication I2C pour capteurs et écran OLED</li>
-            <li><strong>Adafruit_GFX.h :</strong> dessin d’éléments graphiques (texte, formes)</li>
-            <li><strong>Adafruit_SSD1306.h :</strong> gestion de l’écran OLED SSD1306</li>
+          <h3 className="text-2xl font-semibold border-b border-gray-700">Fonctionnalités</h3>
+          <ul className="list-disc list-inside space-y-1">
+            <li><strong>Créer et gérer des annonces :</strong> Les recruteurs peuvent publier de nouvelles annonces, les modifier ou les supprimer.</li>
+            <li><strong>Postuler aux offres :</strong> Les candidats peuvent postuler directement aux annonces disponibles.</li>
+            <li><strong>Consulter les annonces :</strong> Tous les utilisateurs connectés peuvent naviguer et lire les annonces publiées.</li>
+            <li><strong>Authentification sécurisée :</strong> Les utilisateurs doivent se connecter pour accéder aux fonctionnalités du site.</li>
+            <li><strong>Trois interfaces distinctes :</strong> Administrateur, recruteur et candidat, chacune adaptée aux rôles et permissions.</li>
+            <li><strong>Espace recruteur :</strong> Gestion des candidatures reçues, avec possibilité d’accepter ou de refuser les postulants.</li>
+            <li><strong>Espace administrateur :</strong> Accès complet aux tables de la base de données, gestion des CRUDs pour tous les modèles.</li>
+            <li><strong>Notifications :</strong> Indication si un candidat a déjà postulé à une annonce.</li>
+            <li><strong>Affichage dynamique :</strong> Les annonces sont chargées via l’API et mises à jour en temps réel.</li>
+            <li><strong>Pages détaillées :</strong> Chaque annonce dispose d’une page ou d’une fenêtre "Voir plus" pour afficher toutes les informations.</li>
           </ul>
         </section>
 
-        <section className="bg-gray-900 p-6 rounded-xl shadow-lg space-y-4">
-          <h3 className="text-2xl font-semibold border-b border-gray-700 ">Fonctions clés</h3>
-          <p className="">Plus de 20 fonctions ont été créées pour gérer le gameplay et les interactions :</p>
-          <ul className="list-disc list-inside space-y-1 ">
-            <li>recuperation(), sauvegarde() – gestion des données persistantes</li>
-            <li>menu(), fenetreStat() – navigation dans le menu et affichage des stats</li>
-            <li>aventure(), combat(), recompenses() – mini-jeux et combats</li>
-            <li>chercherPomme(), pauseJeu(), pommesRecuperees() – mini-jeu de récolte de pommes</li>
-            <li>magasin(), achatFood(), achatPotions() – achats et gestion des ressources</li>
-            <li>manger(), dormir(), laver(), soigner() – actions principales du monstre</li>
-            <li>mourir() – gestion de la mort et réinitialisation</li>
-          </ul>
-        </section>
-
-        <section className="bg-gray-900 p-6 rounded-xl shadow-lg space-y-4">
-          <h3 className="text-2xl font-semibold border-b border-gray-700 ">Gameplay</h3>
-          <p className="">Le joueur interagit avec le monstre via l’écran OLED et les boutons :</p>
-          <ul className="list-disc list-inside space-y-2 ">
-            <li><strong>Manger :</strong> choisir la nourriture dans la cuisine et nourrir le monstre</li>
-            <li><strong>Dormir :</strong> suivre la fatigue et le temps de sommeil</li>
-            <li><strong>Se laver et soigner :</strong> animations et gestion de la santé du monstre</li>
-            <li><strong>Mini-jeux :</strong>
-              <ul className="list-disc list-inside pl-4 space-y-1">
-                <li>Ramassage de pommes – attraper jusqu’à 15 pommes et vendre ou stocker</li>
-                <li>Aventure en forêt – combats contre des créatures avec choix d’attaque, potion ou fuite</li>
-              </ul>
-            </li>
-            <li><strong>Magasin :</strong> achat de nourriture et de potions avec l’argent gagné</li>
-          </ul>
-        </section>
 
         <section className="bg-gray-900 p-6 rounded-xl shadow-lg space-y-4 ">
           <h3 className="text-2xl font-semibold border-b border-gray-700 ">images et l’arborescence du jeu</h3>
