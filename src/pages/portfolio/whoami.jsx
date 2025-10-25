@@ -65,7 +65,7 @@ export default function Whoami() {
       <div className="mt-6">
         <img src="/whoiam-p/moi.jpg" alt="moi" className="max-w-50 rounded-full border-6 border-gray-800" />
       </div>
-      <div className="text-center  m-3">
+      <div className="text-center w-5/6 m-3">
         <h2 className="text-2xl font-bold m-3">Présentation</h2>
         <p className="bg-gray-800 text-white rounded-xl p-10">
           En tant qu’étudiante en informatique, j’ai appris à maîtriser différentes structures
