@@ -58,10 +58,7 @@ $        <section className="bg-gray-900 p-6 rounded-xl shadow-lg space-y-4">
         <section className="bg-gray-900 p-6 rounded-xl shadow-lg space-y-4">
           <h3 className="text-2xl font-semibold border-b border-gray-700">Maquette figma</h3>
           <div className="flex flex-col items-center">
-            <img className="rounded-xl shadow-md w-100 md:w-2/3 pb-5" src="/projets/minouverse/uml.png" alt="Schéma UML du projet Minouverse" />
-            <p className="text-gray-300 text-center">
-              Diagramme UML représentant les entités principales : <em>User</em>, <em>Post</em>, <em>Comment</em>, <em>Notification</em>, <em>Message</em> et leurs relations.
-            </p>
+            <img className="rounded-xl shadow-md w-100 md:w-2/3 pb-5" src="/projets/minouverse/figma.png" alt="figma du projet Minouverse" />
           </div>
         </section>
 
