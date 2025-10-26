@@ -68,7 +68,7 @@ export default function Whoami() {
       <div className="text-center w-5/6 m-3">
         <h2 className="text-2xl font-bold m-3">Présentation</h2>
         <p className="bg-gray-900 text-white rounded-xl p-10">
-          Étudiante en informatique à Epitech Paris, je suis passionnée par le développement web et les nouvelles technologies. Après un Bachelor à l’école Hexagone, j’intègre un Pré-Master of Science en alternance pour renforcer mes compétences en programmation, conception d’interfaces et innovation numérique. Curieuse, sérieuse et persévérante, j’aime apprendre en créant des projets concrets et relever de nouveaux défis techniques.
+          Étudiante en informatique à Epitech Paris, je suis passionnée par le développement et les nouvelles technologies. Après un Bachelor à l’école Hexagone, j’intègre un Pré-Master of Science en alternance pour renforcer mes compétences en programmation, conception d’interfaces et innovation numérique. Curieuse, sérieuse et persévérante, j’aime apprendre en créant des projets concrets et relever de nouveaux défis techniques.
         </p>
       </div>
       <div className="text-center w-full max-w-5/6">

@@ -11,7 +11,7 @@ export default function Home() {
             Bienvenue !
             </h1>
           <p className="mb-8 text-lg font-normal lg:text-xl sm:px-16 lg:px-48 text-gray-400">
-            Je suis Appoline Vautrin et je vous présente mon portfolio!
+            Je m'appelle Appoline VAUTRIN et je suis étudiante en informatique à Epitech, passionnée par le développement et la création de projets innovants. Curieuse et motivée, j’aime apprendre en pratiquant et relever de nouveaux défis technologiques.
             </p>
           <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
             <a href="https://github.com/Haiku-na" target="_blank" className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-800">
