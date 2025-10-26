@@ -4,9 +4,9 @@ import React from "react";
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="h-full">
       <section className="flex flex-col items-center content-center  h-full bg-gray-800  w-full">
-        <div className=" px-4 text-center py-16">
+        <div className=" px-4 text-center py-16 flex flex-col items-center content-center">
           <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl text-white">
             Bienvenue !
             </h1>
