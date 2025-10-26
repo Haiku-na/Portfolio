@@ -7,7 +7,7 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const getPageName = (path) => {
-    if (path === "/") return "Accueil";
+    if (path === "/") return "";
     if (path === "/contact") return "Contact";
     if (path.startsWith("/portfolio")) return "Portfolio";
     return "404";
