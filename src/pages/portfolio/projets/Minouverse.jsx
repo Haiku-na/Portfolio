@@ -14,131 +14,101 @@ export default function Minouverse() {
           Projet suivant
         </a>
       </div>
+
       <div className="flex flex-col w-5/6 space-y-12">
 
         <section className="bg-gray-900 rounded-xl shadow-lg space-y-4">
-          <img src="/projets/minouverse/minouverse.png" className="w-full rounded-t-xl max-h-100 object-contain md:object-cover" alt="accueil minouverse" />
+          <img src="/projets/minouverse/minouverse.png" className="w-full rounded-t-xl max-h-100 object-contain md:object-cover" alt="Accueil Minouverse" />
           <div className="p-6">
-            <h2 className="text-3xl font-bold border-b-2 border-white pb-2">Tamamonstra – Tamagotchi Arduino</h2>
+            <h2 className="text-3xl font-bold border-b-2 border-white pb-2">Minouverse – Application Web Twitter-Like</h2>
+            <p className="leading-relaxed">
+              Projet réalisé dans le cadre du Bachelor Informatique à l’école Hexagone. <br />
+              <strong>Minouverse</strong> est une application web inspirée de Twitter, développée en équipe, qui permet aux utilisateurs de publier, commenter, aimer, échanger des messages privés et recevoir des notifications en temps réel. <br />
+              Ce projet a mobilisé des compétences en développement web fullstack, conception d’API REST et modélisation UML.
+            </p>
+          </div>
+        </section>
 
-            <p className=" leading-relaxed">
-              Projet réalisé dans le cadre du Bachelor Informatique à l'école Hexagone. <br />
-              Tamamonstra est un Tamagotchi interactif où l’utilisateur prend soin d’un petit monstre virtuel. <br />
-              Le monstre doit manger, dormir, jouer, se laver et être soigné, et peut partir à l’aventure pour gagner de l’argent et des ressources.
+$        <section className="bg-gray-900 p-6 rounded-xl shadow-lg space-y-4">
+          <h3 className="text-2xl font-semibold border-b border-gray-700">Architecture et Technologies</h3>
+          <ul className="list-disc list-inside space-y-1">
+            <li><strong>Backend :</strong> Flask (Python) – création de l’API REST et logique serveur</li>
+            <li><strong>Frontend :</strong> Next.js / HTML / CSS / JavaScript – interface utilisateur dynamique</li>
+            <li><strong>Base de données :</strong> Supabase – stockage des utilisateurs, posts, commentaires, notifications et messages</li>
+            <li><strong>Authentification :</strong> NextAuth – gestion sécurisée des sessions utilisateur</li>
+            <li><strong>Stockage médias :</strong> Cloudinary – hébergement des images et vidéos</li>
+            <li><strong>Prototypage :</strong> Figma – maquettes des pages principales (fil d’actualité, messagerie, notifications)</li>
+          </ul>
+        </section>
+
+        <section className="bg-gray-900 p-6 rounded-xl shadow-lg space-y-4">
+          <h3 className="text-2xl font-semibold border-b border-gray-700">Fonctionnalités principales</h3>
+          <ul className="list-disc list-inside space-y-1">
+            <li><strong>CRUD des publications :</strong> créer, consulter, modifier et supprimer ses posts</li>
+            <li><strong>Commentaires et réponses :</strong> commenter un post et répondre à d’autres utilisateurs</li>
+            <li><strong>Likes et favoris :</strong> liker un post et l’ajouter à ses favoris</li>
+            <li><strong>Système de notifications :</strong> notifications automatiques pour les nouveaux posts, commentaires et réponses</li>
+            <li><strong>Suivis :</strong> suivre ou se désabonner d’un utilisateur pour personnaliser son fil d’actualité</li>
+            <li><strong>Messagerie privée :</strong> envoi de messages directs entre utilisateurs</li>
+            <li><strong>Signalement de contenu :</strong> signaler des posts inappropriés (notification aux modérateurs)</li>
+            <li><strong>Sondages :</strong> création et participation à des sondages interactifs via les posts</li>
+          </ul>
+        </section>
+
+        <section className="bg-gray-900 p-6 rounded-xl shadow-lg space-y-4">
+          <h3 className="text-2xl font-semibold border-b border-gray-700">Maquette figma</h3>
+          <div className="flex flex-col items-center">
+            <img className="rounded-xl shadow-md w-100 md:w-2/3 pb-5" src="/projets/minouverse/uml.png" alt="Schéma UML du projet Minouverse" />
+            <p className="text-gray-300 text-center">
+              Diagramme UML représentant les entités principales : <em>User</em>, <em>Post</em>, <em>Comment</em>, <em>Notification</em>, <em>Message</em> et leurs relations.
             </p>
           </div>
         </section>
 
         <section className="bg-gray-900 p-6 rounded-xl shadow-lg space-y-4">
-          <h3 className="text-2xl font-semibold border-b border-gray-700 ">Matériel et composants</h3>
-          <ul className="list-disc list-inside space-y-1 ">
-            <li>Carte ESP32 – cœur du dispositif et stockage des données persistantes</li>
-            <li>Trois boutons poussoirs – interactions avec le monstre</li>
-            <li>Écran OLED – affichage du jeu</li>
-            <li>Boîtier modélisé avec Tinkercad</li>
-            <li>Fils électriques – connexions entre composants</li>
+          <h3 className="text-2xl font-semibold border-b border-gray-700">Difficultés rencontrées</h3>
+          <ul className="list-disc list-inside space-y-1">
+            <li>Gestion des réponses imbriquées dans les commentaires</li>
+            <li>Déclenchement automatique et cohérent des notifications sans duplication</li>
+            <li>Mise à jour dynamique du frontend via AJAX pour les likes et notifications</li>
+            <li>Organisation du code Flask pour séparer routes, modèles et logique métier</li>
           </ul>
         </section>
 
         <section className="bg-gray-900 p-6 rounded-xl shadow-lg space-y-4">
-          <h3 className="text-2xl font-semibold border-b border-gray-700 ">Schéma électronique et boîtier</h3>
-          <div className=" flex flex-col items-center">
-            <img className="rounded-xl shadow-md w-100 md:w-2/3 pb-5" src="/projets/tamagoshi/shematech.png" alt="Shéma technique" />
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 justify-items-center">
-              <img className="rounded-xl shadow-md" src="/projets/tamagoshi/boitier.png" alt="Boîtier Tamamonstra intérieur" />
-              <ul className="list-disc list-inside space-y-1  content-center">
-                <li>	Le boitier est composé de deux parties facilitant la fermeture du boitier. On peut les faire glisser pour assurer une fermeture optimale. </li>
-                <li>	Les différentes barres permettent de caler les différents éléments contenus dans le boitier. </li>
-                <li>	Trois trous pour les trois boutons et une dernier pour le l’écran. </li>
-                <li>	Les deux barres dans la partie basse du boiter sert a placer la carte ESP32 et l’Arche permet de caler l’ESP32 une fois le boitier fermé.  Un trou pour faire passer les fils. </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <section className="bg-gray-900 p-6 rounded-xl shadow-lg space-y-4">
-          <h3 className="text-2xl font-semibold border-b border-gray-700 ">Bibliothèques Arduino utilisées</h3>
-          <ul className="list-disc list-inside space-y-1 ">
-            <li><strong>Preferences.h :</strong> sauvegarde des données persistantes (états du monstre, paramètres utilisateur)</li>
-            <li><strong>SPI.h :</strong> communication rapide avec périphériques SPI</li>
-            <li><strong>Wire.h :</strong> communication I2C pour capteurs et écran OLED</li>
-            <li><strong>Adafruit_GFX.h :</strong> dessin d’éléments graphiques (texte, formes)</li>
-            <li><strong>Adafruit_SSD1306.h :</strong> gestion de l’écran OLED SSD1306</li>
+          <h3 className="text-2xl font-semibold border-b border-gray-700">Résultats et compétences acquises</h3>
+          <ul className="list-disc list-inside space-y-1">
+            <li>Maîtrise du développement d’une application web complète (frontend + backend)</li>
+            <li>Conception et utilisation d’une API REST avec Flask</li>
+            <li>Intégration d’un système de notifications automatisé</li>
+            <li>Utilisation de Supabase pour la gestion de données relationnelles</li>
+            <li>Modélisation UML et prototypage d’interfaces sur Figma</li>
+            <li>Amélioration du travail collaboratif et de la gestion de projet</li>
           </ul>
-        </section>
-
-        <section className="bg-gray-900 p-6 rounded-xl shadow-lg space-y-4">
-          <h3 className="text-2xl font-semibold border-b border-gray-700 ">Fonctions clés</h3>
-          <p className="">Plus de 20 fonctions ont été créées pour gérer le gameplay et les interactions :</p>
-          <ul className="list-disc list-inside space-y-1 ">
-            <li>recuperation(), sauvegarde() – gestion des données persistantes</li>
-            <li>menu(), fenetreStat() – navigation dans le menu et affichage des stats</li>
-            <li>aventure(), combat(), recompenses() – mini-jeux et combats</li>
-            <li>chercherPomme(), pauseJeu(), pommesRecuperees() – mini-jeu de récolte de pommes</li>
-            <li>magasin(), achatFood(), achatPotions() – achats et gestion des ressources</li>
-            <li>manger(), dormir(), laver(), soigner() – actions principales du monstre</li>
-            <li>mourir() – gestion de la mort et réinitialisation</li>
-          </ul>
-        </section>
-
-        <section className="bg-gray-900 p-6 rounded-xl shadow-lg space-y-4">
-          <h3 className="text-2xl font-semibold border-b border-gray-700 ">Gameplay</h3>
-          <p className="">Le joueur interagit avec le monstre via l’écran OLED et les boutons :</p>
-          <ul className="list-disc list-inside space-y-2 ">
-            <li><strong>Manger :</strong> choisir la nourriture dans la cuisine et nourrir le monstre</li>
-            <li><strong>Dormir :</strong> suivre la fatigue et le temps de sommeil</li>
-            <li><strong>Se laver et soigner :</strong> animations et gestion de la santé du monstre</li>
-            <li><strong>Mini-jeux :</strong>
-              <ul className="list-disc list-inside pl-4 space-y-1">
-                <li>Ramassage de pommes – attraper jusqu’à 15 pommes et vendre ou stocker</li>
-                <li>Aventure en forêt – combats contre des créatures avec choix d’attaque, potion ou fuite</li>
-              </ul>
-            </li>
-            <li><strong>Magasin :</strong> achat de nourriture et de potions avec l’argent gagné</li>
-          </ul>
-        </section>
-
-        <section className="bg-gray-900 p-6 rounded-xl shadow-lg space-y-4 ">
-          <h3 className="text-2xl font-semibold border-b border-gray-700 ">images et l’arborescence du jeu</h3>
-          <div className="flex flex-col items-center">
-            <img src="/projets/tamagoshi/arborescence.png" alt="image jeux" />
-          </div>
-        </section>
-
-        <section className="bg-gray-900 p-6 rounded-xl shadow-lg space-y-4">
-          <h3 className="text-2xl font-semibold border-b border-gray-700 ">Résultats et compétences</h3>
-          <ul className="list-disc list-inside space-y-1 ">
-            <li>Création d’un système interactif avec état persistant</li>
-            <li>Programmation embarquée en C sur ESP32</li>
-            <li>Gestion de mini-jeux et combats avec calcul des récompenses</li>
-            <li>Conception d’un boîtier fonctionnel et esthétique sur Tinkercad</li>
-          </ul>
-          <a href="https://github.com/Haiku-na/Tamagoshi" target="_blank" className="inline-block mt-2 px-4 py-2 bg-indigo-600 hover:bg-indigo-500 rounded-lg transition">
+          <a href="https://github.com/Haiku-na/Minouverse" target="_blank" className="inline-block mt-2 px-4 py-2 bg-indigo-600 hover:bg-indigo-500 rounded-lg transition">
             Voir le code sur GitHub
           </a>
         </section>
-
         <section className="bg-gray-900 p-6 rounded-xl shadow-lg space-y-4">
-          <h3 className="text-2xl font-semibold border-b border-gray-700 ">Ressources supplémentaires</h3>
-          <p className="text-gray-300">Vous pouvez télécharger la fiche technique et fonctionnelle, ou regarder la vidéo de démonstration :</p>
+          <h3 className="text-2xl font-semibold border-b border-gray-700">Ressources supplémentaires</h3>
+          <p className="text-gray-300">Retrouvez ci-dessous la présentation du projet et la documentation technique :</p>
           <div className="flex flex-col items-center">
             <div className="w-full sm:w-1/2">
-              <video className="rounded-xl shadow-md w-full" controls src="/projets/tamagoshi/VAUTRIN Appoline Tamamonstra.mp4" >
+              <video className="rounded-xl shadow-md w-full" controls src="/projets/minouverse/demo.mp4">
                 Votre navigateur ne supporte pas la vidéo.
               </video>
             </div>
-            <div className="flex flex-col sm:flex-row gap-4 m-2 ">
-              <a href="/projets/tamagoshi/VAUTRIN Appoline documentations techniques.pdf" download className="inline-block px-4 py-2 bg-blue-600 hover:bg-blue-500 rounded-lg text-white text-center transition" >
-                Télécharger la notice
+            <div className="flex flex-col sm:flex-row gap-4 m-2">
+              <a href="/projets/minouverse/documentation_technique.pdf" download className="inline-block px-4 py-2 bg-blue-600 hover:bg-blue-500 rounded-lg text-white text-center transition">
+                Télécharger la documentation technique
               </a>
-
-              <a href="/projets/tamagoshi/VAUTRIN Appoline documentation à destination des utilisateurs.pdf" download className="inline-block px-4 py-2 bg-green-600 hover:bg-green-500 rounded-lg text-white text-center transition">
-                Télécharger la fiche technique
+              <a href="https://www.figma.com/design/IvmaNKMV9T1yBaM1iIBT3E/Projet-Groupe-Minouverse?node-id=0-1&t=u8OuMHAeZMKHXnLB-1" className="inline-block px-4 py-2 bg-green-600 hover:bg-green-500 rounded-lg text-white text-center transition">
+                Lien vers la maquette final
               </a>
             </div>
           </div>
-
         </section>
+
       </div>
 
       <div className="flex w-5/6 justify-between py-4">

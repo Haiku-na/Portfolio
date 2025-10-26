@@ -20,7 +20,7 @@ export default function Recrutement() {
         <section className="bg-gray-900 rounded-xl shadow-lg space-y-4">
           <img src="/projets/siterecrutement/accueil.png" className="w-full rounded-t-xl max-h-100 object-contain md:object-cover" alt="recrutelent" />
           <div className="p-6">
-          <h2 className="text-3xl font-bold border-b-2 border-white pb-2">Site de recrutement</h2>
+          <h2 className="text-3xl font-bold border-b-2 border-white pb-2">QuestJobs - Site de recrutement</h2>
 
           <p className=" leading-relaxed">
             Projet réalisé en équipe de trois dans le cadre du Pré-Master of Science à Epitech. <br />

@@ -68,20 +68,10 @@ export default function Whoami() {
       <div className="text-center w-5/6 m-3">
         <h2 className="text-2xl font-bold m-3">Présentation</h2>
         <p className="bg-gray-900 text-white rounded-xl p-10">
-          En tant qu’étudiante en informatique, j’ai appris à maîtriser différentes structures
-          de données essentielles à la programmation. La file (ou queue) est l’une de ces
-          structures fondamentales. Elle organise les éléments selon le principe FIFO (First In,
-          First Out), ce qui signifie que le premier élément ajouté est le premier à sortir.
-          <br />
-          J’ai pu manipuler des files dans plusieurs projets, que ce soit pour gérer des tâches en
-          attente, traiter des requêtes ou organiser des données de manière ordonnée. Cette
-          expérience m’a permis de comprendre l’importance des structures de données pour écrire
-          un code efficace, clair et modulable. La file, bien qu’apparente simple, illustre
-          parfaitement la manière dont un algorithme peut gérer des flux d’informations de façon
-          structurée et fiable.
+          Étudiante en informatique à Epitech Paris, je suis passionnée par le développement web et les nouvelles technologies. Après un Bachelor à l’école Hexagone, j’intègre un Pré-Master of Science en alternance pour renforcer mes compétences en programmation, conception d’interfaces et innovation numérique. Curieuse, sérieuse et persévérante, j’aime apprendre en créant des projets concrets et relever de nouveaux défis techniques.
         </p>
       </div>
-       <div className="text-center w-full max-w-5/6">
+      <div className="text-center w-full max-w-5/6">
         <h2 className="text-2xl font-bold mb-4">Compétences</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2">
           {[
@@ -116,7 +106,7 @@ export default function Whoami() {
             </div>
           ))}
         </div>
-      </div>   
+      </div>
       <div className=" text-center w-5/6 m-3">
         <h2 className="text-2xl font-bold m-3">Mes passions</h2>
         <div className="flex flex-col bg-gray-900 rounded-xl shadow-lg text-white">
