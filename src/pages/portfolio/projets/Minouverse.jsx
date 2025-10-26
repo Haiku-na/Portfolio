@@ -93,11 +93,6 @@ $        <section className="bg-gray-900 p-6 rounded-xl shadow-lg space-y-4">
           <h3 className="text-2xl font-semibold border-b border-gray-700">Ressources supplémentaires</h3>
           <p className="text-gray-300">Retrouvez ci-dessous le lien vers la maquette finale :</p>
           <div className="flex flex-col items-center">
-            <div className="w-full sm:w-1/2">
-              <video className="rounded-xl shadow-md w-full" controls src="/projets/minouverse/demo.mp4">
-                Votre navigateur ne supporte pas la vidéo.
-              </video>
-            </div>
             <div className="flex flex-col sm:flex-row gap-4 m-2">
               <a href="https://www.figma.com/design/IvmaNKMV9T1yBaM1iIBT3E/Projet-Groupe-Minouverse?node-id=0-1&t=u8OuMHAeZMKHXnLB-1" className="inline-block px-4 py-2 bg-green-600 hover:bg-green-500 rounded-lg text-white text-center transition">
                 Lien vers la maquette final
