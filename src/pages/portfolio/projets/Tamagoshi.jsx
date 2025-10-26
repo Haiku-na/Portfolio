@@ -16,14 +16,17 @@ export default function Tamagoshi() {
       </div>
       <div className="flex flex-col w-5/6 space-y-12">
 
-        <section className="space-y-6">
-          <h2 className="text-3xl font-bold border-b-2 border-white pb-2">Tamamonstra – Tamagotchi Arduino</h2>
+        <section className="bg-gray-900 rounded-xl shadow-lg space-y-4">
+          <img src="/projets/tamagoshi/monstre.jpg" className="w-full rounded-t-xl max-h-100 object-contain md:object-cover" alt="photo-talagoshi" />
+          <div className="p-6">
+            <h2 className="text-3xl font-bold border-b-2 border-white pb-2">Tamamonstra – Tamagotchi Arduino</h2>
 
-          <p className=" leading-relaxed">
-            Projet réalisé dans le cadre du Bachelor Informatique à l'école Hexagone. <br />
-            Tamamonstra est un Tamagotchi interactif où l’utilisateur prend soin d’un petit monstre virtuel. <br />
-            Le monstre doit manger, dormir, jouer, se laver et être soigné, et peut partir à l’aventure pour gagner de l’argent et des ressources.
-          </p>
+            <p className=" leading-relaxed">
+              Projet réalisé dans le cadre du Bachelor Informatique à l'école Hexagone. <br />
+              Tamamonstra est un Tamagotchi interactif où l’utilisateur prend soin d’un petit monstre virtuel. <br />
+              Le monstre doit manger, dormir, jouer, se laver et être soigné, et peut partir à l’aventure pour gagner de l’argent et des ressources.
+            </p>
+          </div>
         </section>
 
         <section className="bg-gray-900 p-6 rounded-xl shadow-lg space-y-4">

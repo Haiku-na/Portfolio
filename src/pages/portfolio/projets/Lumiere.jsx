@@ -16,15 +16,16 @@ export default function Lumiere() {
         </a>
       </div>
       <div className="flex flex-col w-5/6 space-y-12">
-
-        <section className="space-y-6">
-          <h2 className="text-3xl font-bold border-b-2 border-white pb-2">Jeu de reflexe</h2>
-
-          <p className=" leading-relaxed">
-            Projet réalisé avec une camarade dans le cadre du Bachelor Informatique à l’école Hexagone. <br />
-            Il s’agit d’un jeu de réflexe consistant à appuyer sur un bouton lorsque la LED centrale est allumée. <br />
-            Un afficheur à sept segments indique le niveau du joueur, et l’intensité des LEDs s’ajuste automatiquement en fonction de la lumière ambiante.
-          </p>
+        <section className="bg-gray-900 rounded-xl shadow-lg space-y-4">
+          <img src="/projets/jeulumiere/construction.png" className="w-full rounded-t-xl max-h-100 object-contain md:object-cover" alt="photo jeu" />
+          <div className="p-6">
+            <h2 className="text-3xl font-bold border-b-2 border-white pb-2">Jeu de reflexe</h2>
+            <p className=" leading-relaxed">
+              Projet réalisé avec une camarade dans le cadre du Bachelor Informatique à l’école Hexagone. <br />
+              Il s’agit d’un jeu de réflexe consistant à appuyer sur un bouton lorsque la LED centrale est allumée. <br />
+              Un afficheur à sept segments indique le niveau du joueur, et l’intensité des LEDs s’ajuste automatiquement en fonction de la lumière ambiante.
+            </p>
+          </div>
         </section>
 
         <section className="bg-gray-900 p-6 rounded-xl shadow-lg space-y-4">

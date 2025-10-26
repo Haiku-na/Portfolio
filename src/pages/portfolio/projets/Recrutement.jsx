@@ -17,13 +17,16 @@ export default function Recrutement() {
       </div>
       <div className="flex flex-col w-5/6 space-y-12">
 
-        <section className="space-y-6">
+        <section className="bg-gray-900 rounded-xl shadow-lg space-y-4">
+          <img src="/projets/siterecrutement/accueil.png" className="w-full rounded-t-xl max-h-100 object-contain md:object-cover" alt="recrutelent" />
+          <div className="p-6">
           <h2 className="text-3xl font-bold border-b-2 border-white pb-2">Site de recrutement</h2>
 
           <p className=" leading-relaxed">
             Projet réalisé en équipe de trois dans le cadre du Pré-Master of Science à Epitech. <br />
             Il s’agit d’un site de recrutement sur le thème du fantastique médiéval. L’objectif du projet était de concevoir un site web complet intégrant un frontend, un backend et une API REST. <br />
           </p>
+          </div>
         </section>
 
         <section className="bg-gray-900 p-6 rounded-xl shadow-lg space-y-4">
