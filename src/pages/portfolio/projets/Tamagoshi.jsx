@@ -4,9 +4,9 @@ import React from "react";
 
 export default function Tamagoshi() {
   return (
-    <div className="flex flex-col min-h-screen text-white">
+    <div className="flex flex-col min-h-screen items-center text-white">
       <Navbar_portfolio />
-      <div className="flex justify-between px-6 py-4">
+      <div className="w-5/6 flex justify-between py-4">
         <a href="/portfolio/projets/minouverse" className="text-white p-3 bg-gray-800 rounded-xl hover:bg-gray-900 hover:text-gray-200">
           Projet précédent
         </a>
@@ -14,7 +14,7 @@ export default function Tamagoshi() {
           Projet suivant
         </a>
       </div>
-      <div className="container mx-auto px-6 py-12 space-y-12">
+      <div className="flex flex-col w-5/6 space-y-12">
 
         <section className="space-y-6">
           <h2 className="text-3xl font-bold border-b-2 border-white pb-2">Tamamonstra – Tamagotchi Arduino</h2>
@@ -125,19 +125,25 @@ export default function Tamagoshi() {
               </video>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 m-2 ">
-              <a href="/projets/tamagoshi/VAUTRIN Appoline documentations techniques.pdf" download className="inline-block px-4 py-2 bg-blue-600 hover:bg-blue-500 rounded-lg text-white text-center transition" >
+              <a href="/projets/tamagoshi/VAUTRIN Appoline documentation à destination des utilisateurs.pdf" download className="inline-block px-4 py-2 bg-blue-600 hover:bg-blue-500 rounded-lg text-white text-center transition" >
                 Télécharger la notice
               </a>
 
-              <a href="/projets/tamagoshi/VAUTRIN Appoline documentation à destination des utilisateurs.pdf" download className="inline-block px-4 py-2 bg-green-600 hover:bg-green-500 rounded-lg text-white text-center transition">
+              <a href="/projets/tamagoshi/VAUTRIN Appoline documentations techniques.pdf " download className="inline-block px-4 py-2 bg-green-600 hover:bg-green-500 rounded-lg text-white text-center transition">
                 Télécharger la fiche technique
               </a>
             </div>
           </div>
 
         </section>
-
-
+      </div>
+      <div className="w-5/6 flex justify-between py-4">
+        <a href="/portfolio/projets/minouverse" className="text-white p-3 bg-gray-800 rounded-xl hover:bg-gray-900 hover:text-gray-200">
+          Projet précédent
+        </a>
+        <a href="/portfolio/projets/siterecrutement" className="text-white p-3 bg-gray-800 rounded-xl hover:bg-gray-900 hover:text-gray-200">
+          Projet suivant
+        </a>
       </div>
     </div>
   );

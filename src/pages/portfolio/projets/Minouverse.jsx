@@ -4,9 +4,9 @@ import React from "react";
 
 export default function Minouverse() {
   return (
-    <div className="flex flex-col min-h-screen text-white">
+    <div className="flex flex-col items-center min-h-screen text-white">
       <Navbar_portfolio />
-      <div className="flex justify-between px-6 py-4">
+      <div className="flex w-5/6 justify-between py-4">
         <a href="/portfolio/projets/jeulumiere" className="text-white p-3 bg-gray-800 rounded-xl hover:bg-gray-900 hover:text-gray-200">
           Projet précédent
         </a>
@@ -14,7 +14,7 @@ export default function Minouverse() {
           Projet suivant
         </a>
       </div>
-      <div className="container mx-auto px-6 py-12 space-y-12">
+      <div className="flex flex-col w-5/6 space-y-12">
 
         <section className="space-y-6">
           <h2 className="text-3xl font-bold border-b-2 border-white pb-2">Tamamonstra – Tamagotchi Arduino</h2>
@@ -136,8 +136,15 @@ export default function Minouverse() {
           </div>
 
         </section>
+      </div>
 
-
+      <div className="flex w-5/6 justify-between py-4">
+        <a href="/portfolio/projets/jeulumiere" className="text-white p-3 bg-gray-800 rounded-xl hover:bg-gray-900 hover:text-gray-200">
+          Projet précédent
+        </a>
+        <a href="/portfolio/projets/tamagoshi" className="text-white p-3 bg-gray-800 rounded-xl hover:bg-gray-900 hover:text-gray-200">
+          Projet suivant
+        </a>
       </div>
     </div>
   );
