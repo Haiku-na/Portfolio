@@ -9,7 +9,7 @@ export default function Navbar_portfolio() {
         setIsMenuOpen((prev) => !prev);
     };
     return (
-        <nav className="flex flex-col items-center md:m-10 md:relative fixed">
+        <nav className="flex flex-col items-center md:relative fixed">
             <button type="button" onClick={toggleMenu} className="fixed top-30 z-100 left-10 cursor-pointer inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-200 text-gray-400 hover:bg-gray-700 focus:ring-gray-600 transition" aria-controls="navbar-sticky" aria-expanded={isMenuOpen} >
                 <span className="sr-only">Ouvrir le menu</span>
                 <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14" >
