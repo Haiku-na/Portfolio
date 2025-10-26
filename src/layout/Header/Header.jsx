@@ -64,7 +64,7 @@ export default function Header() {
         </div>
       </nav>
 
-      <div className="flex justify-center mt-30">
+      <div className="flex justify-center mt-20">
         <h1 className="mb-4 text-3xl font-extrabold text-white md:text-5xl lg:text-6xl">
           <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
             {pageName}
