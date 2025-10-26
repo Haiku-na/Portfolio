@@ -5,7 +5,7 @@ import React from "react";
 export default function Home() {
   return (
     <div className="">
-      <section className="flex flex-col items-center content-center  bg-white dark:bg-gray-800  w-full">
+      <section className="flex flex-col items-center content-center  h-full bg-white dark:bg-gray-800  w-full">
         <div className=" px-4 text-center py-16">
           <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
             Bienvenue !
