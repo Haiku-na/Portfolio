@@ -7,10 +7,10 @@ export default function Minouverse() {
     <div className="flex flex-col items-center min-h-screen text-white">
       <Navbar_portfolio />
       <div className="flex w-5/6 justify-between py-4">
-        <a href="/portfolio/projets/jeulumiere" className="text-white p-3 bg-gray-800 rounded-xl hover:bg-gray-900 hover:text-gray-200">
+        <a href="/portfolio/projets/tamagoshi" className="text-white p-3 bg-gray-800 rounded-xl hover:bg-gray-900 hover:text-gray-200">
           Projet précédent
         </a>
-        <a href="/portfolio/projets/tamagoshi" className="text-white p-3 bg-gray-800 rounded-xl hover:bg-gray-900 hover:text-gray-200">
+        <a href="/portfolio/projets/jeulumiere" className="text-white p-3 bg-gray-800 rounded-xl hover:bg-gray-900 hover:text-gray-200">
           Projet suivant
         </a>
       </div>
@@ -101,10 +101,10 @@ $        <section className="bg-gray-900 p-6 rounded-xl shadow-lg space-y-4">
       </div>
 
       <div className="flex w-5/6 justify-between py-4">
-        <a href="/portfolio/projets/jeulumiere" className="text-white p-3 bg-gray-800 rounded-xl hover:bg-gray-900 hover:text-gray-200">
+        <a href="/portfolio/projets/tamagoshi" className="text-white p-3 bg-gray-800 rounded-xl hover:bg-gray-900 hover:text-gray-200">
           Projet précédent
         </a>
-        <a href="/portfolio/projets/tamagoshi" className="text-white p-3 bg-gray-800 rounded-xl hover:bg-gray-900 hover:text-gray-200">
+        <a href="/portfolio/projets/jeulumiere" className="text-white p-3 bg-gray-800 rounded-xl hover:bg-gray-900 hover:text-gray-200">
           Projet suivant
         </a>
       </div>

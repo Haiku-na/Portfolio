@@ -8,10 +8,10 @@ export default function Lumiere() {
       <Navbar_portfolio />
 
       <div className="flex w-5/6 justify-between  py-4">
-        <a href="/portfolio/projets/siterecrutement" className="text-white p-3 bg-gray-800 rounded-xl hover:bg-gray-900 hover:text-gray-200">
+        <a href="/portfolio/projets/minouverse" className="text-white p-3 bg-gray-800 rounded-xl hover:bg-gray-900 hover:text-gray-200">
           Projet précédent
         </a>
-        <a href="/portfolio/projets/minouverse" className="text-white p-3 bg-gray-800 rounded-xl hover:bg-gray-900 hover:text-gray-200">
+        <a href="/portfolio/projets/siterecrutement" className="text-white p-3 bg-gray-800 rounded-xl hover:bg-gray-900 hover:text-gray-200">
           Projet suivant
         </a>
       </div>
@@ -94,10 +94,10 @@ export default function Lumiere() {
 
       </div>
       <div className="flex w-5/6 justify-between  py-4">
-        <a href="/portfolio/projets/siterecrutement" className="text-white p-3 bg-gray-800 rounded-xl hover:bg-gray-900 hover:text-gray-200">
+        <a href="/portfolio/projets/minouverse" className="text-white p-3 bg-gray-800 rounded-xl hover:bg-gray-900 hover:text-gray-200">
           Projet précédent
         </a>
-        <a href="/portfolio/projets/minouverse" className="text-white p-3 bg-gray-800 rounded-xl hover:bg-gray-900 hover:text-gray-200">
+        <a href="/portfolio/projets/siterecrutement" className="text-white p-3 bg-gray-800 rounded-xl hover:bg-gray-900 hover:text-gray-200">
           Projet suivant
         </a>
       </div>

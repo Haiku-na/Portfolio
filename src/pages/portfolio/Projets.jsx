@@ -31,6 +31,22 @@ export default function Projets() {
       image: "/projets/siterecrutement/accueil.png",
       page: "/portfolio/projets/siterecrutement",
     },
+    ,
+    {
+      title: "3 jours pour sauver le monde",
+      description:
+        "Conception et réalisation d'un jeu vidéo 2D de A à Z en Java. Projet collaboratif.",
+      image: "/projets/2Dgame/acceuilJeu2D.png",
+      page: "/portfolio/projets/2Dgame",
+    },
+    ,
+    // {
+    //   title: "PinguinChat",
+    //   description:
+    //     "Plateforme de communication en temps réel inspirée de Discord. Conçue et développée en équipe.",
+    //   image: "/projets/siterecrutement/accueil.png",
+    //   page: "/portfolio/projets/siterecrutement",
+    // },
   ];
 
   return (

@@ -13,6 +13,7 @@ import Tamagoshi from "../pages/portfolio/projets/Tamagoshi";
 import Minouverse from "../pages/portfolio/projets/Minouverse";
 import Recrutement from "../pages/portfolio/projets/Recrutement";
 import Lumiere from "../pages/portfolio/projets/Lumiere";
+import Game2D from "../pages/portfolio/projets/Game2D";
 
 export default function Router() {
   return (
@@ -29,6 +30,7 @@ export default function Router() {
       <Route path="/portfolio/projets/minouverse" element={<Minouverse/>} />
       <Route path="/portfolio/projets/siterecrutement" element={<Recrutement/>} />
       <Route path="/portfolio/projets/jeulumiere" element={<Lumiere/>} />
+      <Route path="/portfolio/projets/2Dgame" element={<Game2D/>} />
     </Routes>
   );
 }
