@@ -54,11 +54,11 @@ export default function Header() {
                   CV Numérique
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/contact" className="block py-2 px-3 rounded-sm hover:bg-gray-700 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 text-white" onClick={() => setIsMenuOpen(false)}>
                   Contact
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
